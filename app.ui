@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>SimHei</family>
+    <pointsize>14</pointsize>
+    <weight>50</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>My Áp</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../dl/diagona-icons-1.0/icons/application-share.png</normaloff>../../../dl/diagona-icons-1.0/icons/application-share.png</iconset>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <widget class="QTabWidget" name="main">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1204</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1201</width>
+      <height>775</height>
+     </size>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tb_banhang">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../dl/diagona-icons-1.0/icons-shadowless/milk-label.png</normaloff>../../../dl/diagona-icons-1.0/icons-shadowless/milk-label.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Bán hàng</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>9</y>
+        <width>1131</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Thông tin khách hàng</string>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>60</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1666666</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Họ tên</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>130</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1666666</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Giới tính</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="banhang_et_hoten">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>60</y>
+         <width>631</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="banhang_check_nam">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>130</y>
+         <width>61</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nam</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="banhang_check_nu">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>130</y>
+         <width>61</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nữ</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="banhang_et_sdt">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>190</y>
+         <width>631</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>190</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1666666</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Số điện thoại</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>319</y>
+        <width>1141</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Thanh toán</string>
+      </property>
+      <widget class="QPushButton" name="banhang_btn_tinhtien">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>292</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Tính tiền</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="banhang_check_bimbim">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>50</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bim Bim</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="banhang_check_keo">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>50</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Kẹo</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="banhang_check_banhorio">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>50</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bánh orio</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="banhang_et_tt">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>290</y>
+         <width>431</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="margin">
+        <number>1</number>
+       </property>
+       <property name="indent">
+        <number>380</number>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tb_image">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../dl/diagona-icons-1.0/icons-shadowless/images.png</normaloff>../../../dl/diagona-icons-1.0/icons-shadowless/images.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Xem ảnh ngẫu nhiên</string>
+     </attribute>
+     <widget class="QPushButton" name="btn_anh_ramdom">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>200</y>
+        <width>271</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Xem</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>20</y>
+        <width>661</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <action name="actionfw">
+   <property name="text">
+    <string>Gọi món</string>
+   </property>
+  </action>
+  <action name="actionwd">
+   <property name="text">
+    <string>wd</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
